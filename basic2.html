@@ -1,0 +1,140 @@
+<!doctype html5>
+<html>
+    <head>
+        <title>Example of Links</title>
+        <style>
+            a {
+                /* this is required to remove the underline from the link */
+                text-decoration: none;
+            }
+            ul.base  {
+                /* this is required to set the width of the elements */
+                width: 400px;
+            }
+            li.link {
+                /* required to remove the bullet point */
+                list-style:none;
+
+                /* this is a comment */
+                /* optional items are included below */
+                color: white;
+                background-color:blue;
+                padding: 4px;
+                text-align: center;
+                border: 3px solid red;
+                border-radius: 30px;
+                cursor: crosshair;
+                transition: 1s;
+            }
+            li.link:hover {
+                background-color: aqua;
+                color: black;
+                transition: .25s;
+                font-weight: bold;
+            }
+
+
+            ul.horizontalMenu {
+                width: 100%;
+                text-align:center;
+            }
+            li.horizontal {
+                display:inline-block;
+                width: 125px;
+                color: white;
+                background-color:green;
+                padding: 4px;
+                text-align: center;
+                border: 3px solid red;
+                border-radius: 30px;
+                cursor: crosshair;
+                transition: 1s;
+            }
+            li.horizontal:hover {
+                background-color: aqua;
+                border: 3px solid blue;
+                color: black;
+                transition: .25s;
+                font-weight: bold;
+            }
+
+            ul.horizontal2 {
+                /* horizontal menu needs display: flex */
+                display: flex;
+            }
+            li.horizontal2 {
+                display:inline-block;
+                text-align:center;
+                list-style-type:none;
+                width: 125px;
+                border: 2px solid blue;
+                padding: 5px;
+                color: blue;
+                background-color: yellow;
+            }
+            li.horizontal2:hover {
+                background-color: rgb(92, 86, 5);
+                color: rgb(176, 241, 252)
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Create a Template</h3>
+        <p>When you are working with creating a navigation system,
+            it is best to have your links already created so you can 
+            create a basic template that will be used for all of your
+            pages.  While there have been many methods that have been
+            used to create and organize a menu system, the current
+            most popular method is to use an unordered list using the 
+            &lt;ul&gt;&lt;/ul&gt; tags.  You will also need to include 
+            individual &lt;li&gt;&lt;/li&gt; tags for each menu item.
+        Consider the example below:
+        </p>
+        
+        <ul>
+            <a href="https://www.google.com"><li>This link goes to the Google Website</li></a>
+            <a href="https://www.amazon.com"><li>This link goes to the Amazon website</li></a>
+            <a href="basic.html"><li>This link goes to the basic.html page on your site</li></a>
+            <a href="demo.html"><li>This link goes to the demo.html page on your site</li></a>
+            <a href="example.html"><li>This link goes to the example.html page on your site</li></a>  
+        </ul>
+
+        <p>Note that this menu system shows the basic hyperlink.  It has the blue 
+            text that is underlined which is the old way of showing that a section of 
+            text is a hyperlink, and there is a bulletpoint at the front of each 
+            list item that is created by the &lt;li&gt;&lt;/li&gt;.
+        </p>
+        <hr>
+        <p>Note also that when you are using the &lt;li&gt;&lt;/li&gt; and &lt;a&gt;&lt;/a&gt; tags
+            together, <b>the order of the opening and closing tags matters</b>.  Now see the same
+            html when styles have been included:
+        </p>
+        <ul class="base">
+            <a href="https://www.google.com"><li class="link">This link goes to the Google Website</li></a>
+            <a href="https://www.amazon.com"><li class="link">This link goes to the Amazon website</li></a>
+            <a href="basic.html"><li class="link">This link goes to the basic.html page on your site</li></a>
+            <a href="demo.html"><li class="link">This link goes to the demo.html page on your site</li></a>
+            <a href="example.html"><li class="link">This link goes to the example.html page on your site</li></a>  
+        </ul>
+        <hr>
+        <p> An alternative is to run a horizontal menu system, but then you have to
+            make sure that the links are wide enough and that your descriptions are not 
+            too wide.
+        </p>
+        <ul class="horizontalMenu">
+            <a href="https://www.google.com"><li class="horizontal">Google Website</li></a>
+            <a href="https://www.amazon.com"><li class="horizontal">Amazon website</li></a>
+            <a href="basic.html"><li class="horizontal">basic.html</li></a>
+            <a href="demo.html"><li class="horizontal">demo.html</li></a>
+            <a href="example.html"><li class="horizontal">example.html</li></a>  
+        </ul>
+        <hr>
+        <ul class="horizontal2">
+            <a href="https://www.google.com"><li class="horizontal2">Google Website</li></a>
+            <a href="https://www.amazon.com"><li class="horizontal2">Amazon website</li></a>
+            <a href="basic.html"><li class="horizontal2">basic.html</li></a>
+            <a href="demo.html"><li class="horizontal2">demo.html</li></a>
+            <a href="example.html"><li class="horizontal2">example.html</li></a>  
+        </ul>        
+    </body>
+</html>
